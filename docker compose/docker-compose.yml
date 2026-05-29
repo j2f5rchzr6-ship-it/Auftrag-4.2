@@ -1,0 +1,11 @@
+services:
+  # Web service configuration
+  web:
+    build:
+      context: ..
+      dockerfile: dockerfiles/Dockerfile.web
+    image: ghcr.io/j2f5rchzr6-ship-it/html-docker-app:latest
+    container_name: html-docker-app
+    ports:
+      - "8080:80"
+    restart: unless-stopped
