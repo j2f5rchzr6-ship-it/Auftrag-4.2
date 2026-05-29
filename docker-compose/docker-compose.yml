@@ -8,4 +8,3 @@ services:
     container_name: html-docker-app
     ports:
       - "8080:80"
-    restart: unless-stopped
